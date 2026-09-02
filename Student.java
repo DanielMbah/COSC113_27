@@ -22,6 +22,55 @@ class Student {
     String LN;
 }
 
+public class Main {
+
+    public static void main(String[] args) {
+
+        // Using the constructor
+        Student s3 = new Student("Burkes", "Jayne", 111);
+
+        System.out.println("First name is: " + s3.FN);
+        System.out.println("Last name is: " + s3.LN);
+        System.out.println("Student ID is: " + s3.SID);
+
+        // If constructors are not defined JVM will provide a default constructor
+        Student s1 = new Student();
+        System.out.println(s1);
+
+        Student s2 = new Student();
+
+        System.out.println("First name is: " + s2.FN);
+        System.out.println("Last name is: " + s2.LN);
+        System.out.println("Student ID is: " + s2.SID);
+
+        // Use of dot operator (.)
+    }
+}
+
+class Student {
+
+    // Attributes
+    String FN;
+    String LN;
+    int SID;
+
+    // Constructor
+    Student(String firstName, String lastName, int studentID) {
+        FN = firstName;
+        LN = lastName;
+        SID = studentID;
+    }
+
+    // Default constructor
+    Student() {
+    }
+
+    // toString method
+    public String toString() {
+        return "Student: " + FN + " " + LN + " " + SID;
+    }
+}
+
 //method name - main
 //JVM executes student.main
 //JVM knows their is a class which contains the main method. Use classname.method name
