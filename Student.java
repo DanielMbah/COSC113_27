@@ -91,3 +91,25 @@ class Student {
 // = first.name
 //.operator. Must be used with reference. It follows a reference
 //null, since the default contructor didn't assign any value
+
+
+//incrementation
+public class Student {
+
+    public static void main(String[] args) {
+
+        for (int j = 1; j <= 5; j++) {
+            System.out.println(j);
+        }
+        System.out.print("outside loop");
+
+        for (int i = 0; i <= 5; i++) {
+            System.out.println(i);
+        }
+        System.out.println();
+    }
+}
+
+
+
+
