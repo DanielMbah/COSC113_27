@@ -112,4 +112,32 @@ public class Student {
 
 
 
+//loops and methods
+public class Student {
 
+    public static void main(String[] args) {
+
+        Pattern_3();
+
+    }
+
+    public static void Print_Marker() {
+        System.out.println();
+    }
+
+    public static void Pattern_3() {
+
+        int j, k;
+
+        // Outer loop
+        for (j = 5; j >= 1; j--) {
+
+            // Inner loop - repetition of integers
+            for (k = 1; k <= j; k++) {
+                System.out.print("_" + " ");
+            }
+
+            Print_Marker();
+        }
+    }
+}
